@@ -4,19 +4,37 @@ body{
 
 #left {
   background: #D8FED7;
-  height: 100vh;
   display: grid;
   place-items: center ;
+}
+
+@media(min-width: 992px){
+  #left {
+    height: 100vh;
+  }
 }
 
 #left .logo {
   width: 200px;
 }
 
+@media(max-width: 575px){
+  #left .logo {
+    width: 100px;
+    padding-top: 20px;
+  }
+}
+
 #right {
   background-color: palegreen;
   min-height: 100vh;
-  padding: 50px 100px;
+  padding: 50px 15px;
+}
+
+@media(min-width: 992px){
+  #right {
+    padding: 50px 100px;
+  }
 }
 
 #master-history {
